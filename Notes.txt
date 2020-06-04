@@ -1,0 +1,57 @@
+Hadoop Lecture 
+- Most used in big data 
+- It is actually a large scale batch data processing system 
+* Why Hadoop 
+- 
+* Hadoop Features
+- Store files through HDFS 
+- Hadoop provides acces to file system
+- Contain mostly Java files and scripts 
+- Provide source code and documentation 
+
+* Hadoop Architecture 
+- Process and analyse large files- (Pig)
+
+*Hadoop High Level Architechture 
+
+HDFS - Data node 
+- Name node connects with the data node. The name node job is to privent data lost.
+- 
+*Rejects 
+Home work to look up rejects and how does it works.
+
+-------------------------------------------------
+HDP
+- Hadoop is built around orizontal scalling. 
+- Horizontal scaling means that you scale by adding more machines into your pool of resources whereas Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine.
+
+- Rejects 
+pattern = r"^gr.*y$" #beging and end. 
+
+- Hadoop
+Namenode Resilience 
+what are clusters?
+
+how does HDFS configurate a cluster?
+
+How the files on a Hadoop eco system works?
+
+The client will be on one cluster?
+python -m  python pip install jupyter 
+
+installing Jupyter
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-jupyter-notebook-with-python-3-on-ubuntu-18-04
+
+Slides
+
+https://slides.com/praketasaxena/deck-1d59f0/fullscreen#/3
+
+How to install Microsoft teams
+https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/
+-------------------------------------------------------------------------------------
+HDFS - Write about HDFS
+
+what is the difference between multiprocessesing or multitraining. 
+Is python multy processing or multy training, through multy processing and multy training. 
+
