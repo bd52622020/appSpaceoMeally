@@ -5,7 +5,7 @@ Hadoop Lecture
 - 
 * Hadoop Features
 - Store files through HDFS 
-- Hadoop provides acces to file system
+- Hadoop provides access to file system
 - Contain mostly Java files and scripts 
 - Provide source code and documentation 
 
@@ -27,16 +27,20 @@ HDP
 
 - Rejects 
 pattern = r"^gr.*y$" #beging and end. 
+----------------------------------------------
 
 - Hadoop
 Namenode Resilience 
-what are clusters?
+what are Hadoop clusters?
+Hadoop clusters are known for boosting the speed of data analysis applications. They also are highly scalable: If a cluster's processing power is overwhelmed by growing volumes of data, additional cluster nodes can be added to increase throughput. Hadoop clusters also are highly resistant to failure because each piece of data is copied onto other cluster nodes, which ensures that the data is not lost if one node fails.
 
-how does HDFS configurate a cluster?
+How does HDFS configurate a cluster?
+An HDFS cluster consists of a single NameNode, a master server that manages the file system namespace and regulates access to files by clients. In addition, there are a number of DataNodes, usually one per node in the cluster, which manage storage attached to the nodes that they run on.
 
 How the files on a Hadoop eco system works?
 
-The client will be on one cluster?
+Will the client be on one cluster? NO
+---------------------------
 python -m  python pip install jupyter 
 
 installing Jupyter
@@ -51,7 +55,28 @@ How to install Microsoft teams
 https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/
 -------------------------------------------------------------------------------------
 HDFS - Write about HDFS
+HDFS is a distributed file system that handles large data sets running on commodity hardware. It is used to scale a single Apache Hadoop cluster to hundreds (and even thousands) of nodes. HDFS is one of the major components of Apache Hadoop, the others being MapReduce and YARN.
 
-what is the difference between multiprocessesing or multitraining. 
-Is python multy processing or multy training, through multy processing and multy training. 
+Apache Hadoop
+Apache Hadoop is a collection of open-source software utilities that facilitate using a network of many computers to solve problems involving massive amounts of data and computation. It provides a software framework for distributed storage and processing of big data using the MapReduce programming model.
+----------------------------------------------------------
+
+what is the difference between multiprocessesing and multithreading.
+A multiprocessing system has more than two processors whereas Multithreading is a program execution technique that allows a single process to have multiple code segments. Multiprocessing improves the reliability of the system while in the multithreading process, each thread runs parallel to each other.
+- Multithreading system is not interruptible/killable
+- Multiprocessig (IPC(Inter-Process Communication) a quite complicated with more overhead. Has a larger memory footprint.
+- Multiprocessing helps you to increase computing power.
+- Multithreading helps you to create computing threads of a single process to increase computing power.
+
+#Recap
+1.In Multiprocessing, CPUs are added for increasing computing power.	While In Multithreading, many threads are created of a single process for increasing computing power.
+2.	In Multiprocessing, Many processes are executed simultaneously.	While in multithreading, many threads of a process are executed simultaneously.
+3.	Multiprocessing are classified into Symmetric and Asymmetric.	While Multithreading is not classified in any categories.
+4.	In Multiprocessing, Process creation is a time-consuming process.	While in Multithreading, process creation is according to economical.
+- 
+The threading module uses threads, the multiprocessing module uses processes. The difference is that threads run in the same memory space, while processes have separate memory. This makes it a bit harder to share objects between processes with multiprocessing
+==========================
+Is python multiprocessing or multithreadng, through multiprocessing and multithreading.
+The Python threading module uses threads instead of processes. Threads uniquely run in the same unique memory heap. Whereas Processes run in separate memory heaps. This makes sharing information harder with processes and object instances
+
 
