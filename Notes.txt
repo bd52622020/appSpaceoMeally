@@ -79,4 +79,26 @@ The threading module uses threads, the multiprocessing module uses processes. Th
 Is python multiprocessing or multithreadng, through multiprocessing and multithreading.
 The Python threading module uses threads instead of processes. Threads uniquely run in the same unique memory heap. Whereas Processes run in separate memory heaps. This makes sharing information harder with processes and object instances
 
+--------------------------------------------------
+manage vs external tables 
+ The main difference is that when you drop an external table, the underlying data files stay intact. This is because the user is expected to manage the data files and directories. With a managed table, the underlying directories and data get wiped out when the table is dropped.
+
+what is the difference between low cardinality and high cardinality?
+In the context of databases, cardinality refers to the uniqueness of data values contained in a column. High cardinality means that the column contains a large percentage of totally unique values. Low cardinality means that the column contains a lot of “repeats” in its data range.
+
+------------------------------
+What is spark in hadoop?
+What’s Spark?
+Spark is a newer project, initially developed in 2012, at the AMPLab at UC Berkeley. It’s also a top-level Apache project focused on processing data in parallel across a cluster, but the biggest difference is that it works in-memory.
+
+Whereas Hadoop reads and writes files to HDFS, Spark processes data in RAM using a concept known as an RDD, Resilient Distributed Dataset. Spark can run either in stand-alone mode, with a Hadoop cluster serving as the data source, or in conjunction with Mesos. In the latter scenario, the Mesos master replaces the Spark master or YARN for scheduling purposes.
+-----------------------------
+what is DAG in Spark
+
+(Directed Acyclic Graph) DAG in Apache Spark is a set of Vertices and Edges, where vertices represent the RDDs and the edges represent the Operation to be applied on RDD. In Spark DAG, every edge directs from earlier to later in the sequence.
+
+
+
+
+
 

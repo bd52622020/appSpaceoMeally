@@ -1,0 +1,76 @@
+TASK 6
+ 
+Q1) Write a palindrome checker in Python. 
+Write a Python function that checks whether a passed string is palindrome or not.
+Unum = int(input("Enter a number:"))
+def pol(Unum):
+    temp=Unum
+    rev = 0
+    while(Unum>0):
+        dig=Unum%10
+        rev=rev*10+dig
+        Unum=Unum//10
+    if(temp==rev):
+        print("The number is palindrome!")
+    else:
+        print("Not a palindrome!")
+pol(Unum)
+
+
+  
+Q2)
+Write a Python script to display the various Date Time formats.
+Current date and time
+Current year
+Month of year
+Week number of the year
+Weekday of the week
+Day of year
+Day of the month
+Day of week
+ import datetime
+now = datetime.datetime.now()
+print (now)
+print('Current date and time: ')
+print (now.strftime('%Y-%m-%d %H:%M:%S'))
+print('Current Year : ')
+print (now.strftime('%Y'))
+print('Current Month : ')
+print (now.strftime('%m'))
+print('Current day: ')
+print (now.strftime('%d'))
+print('Current time ')
+print (now.strftime('%H:%M:%S'))
+
+#This presents the week.
+my_date = datetime.date.today()
+year, week_num, day_of_week = my_date.isocalendar()
+print("Week #" + str(week_num) + " of year " + str(year))
+
+Q3)
+Write a Python program to subtract 30 days from current date.
+import datetime
+from datetime import date, timedelta
+dt = date.today() - timedelta(30)
+print ('Current date :', date.today ())
+print ('30 days before Current Date :', dt)
+
+
+Q4) 
+Write a Python program to match a string that contains only upper and lowercase letters, numbers, and underscores.
+
+if match found console output: match found
+else no match found
+import re
+def text_match(text):
+        #regex
+        patterns = '^[a-zA-Z0-9_]*$'
+        #search pattern
+        if re.search(patterns,  text):
+                return 'Found a match!'
+        else:
+                return('Not matched!')
+
+print(text_match("Match these string for Omeally"))
+print(text_match("Did these string contained any match "))
+
