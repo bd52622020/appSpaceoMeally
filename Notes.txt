@@ -96,7 +96,13 @@ Whereas Hadoop reads and writes files to HDFS, Spark processes data in RAM using
 what is DAG in Spark
 
 (Directed Acyclic Graph) DAG in Apache Spark is a set of Vertices and Edges, where vertices represent the RDDs and the edges represent the Operation to be applied on RDD. In Spark DAG, every edge directs from earlier to later in the sequence.
+----------------------------
+wide transformation and narrow transformation
 
+Narrow transformations are the result of map(), filter(). Wide transformation — In wide transformation, all the elements that are required to compute the records in the single partition may live in many partitions of parent RDD.
+
+Apache Spark Shuffling
+The process of moving the data from partition to partition in order to aggregate, join, match up, or spread out in some other way, is known as shuffling. The aggregation/reduction that takes place before data is moved across partitions is known as a map-side shuffle.
 
 
 
