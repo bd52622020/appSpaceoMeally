@@ -1,0 +1,89 @@
+Write a Python function for checking the speed of drivers. This function should have one parameter: speed.
+If speed is less than 70, it should print “Ok”.
+Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
+If the driver gets more than 12 points, the function should print: “License suspended”
+speed=int(input("Enter speed: "))
+def check(speed):
+    if speed <= 70:
+        return "OK"
+
+    else:
+        speed1 = (speed-70)//5
+
+        if speed1 <= 12:
+            return print(f"Point: {speed1}")
+
+        else:
+            return print("License suspended")
+
+enter = check(speed)
+
+print(enter)
+
+Read a file in python, 
+Use Try, Exception and Finally block to execute pieces of code
+check if it exists 
+If it exists print out the first 10 lines 
+If it does not exist print on console “the file does not exist”  
+#The code here is working but I cant see any results to optimise it because my IDE is not operating properlt for open funtion and regex.
+# I am able to get it to run now and I will try to fix the other issues tomorrow.
+
+try:
+    f = open('Pandas.txt', 'r+')
+    for i in range(10):
+        print(f.readline())
+    f.close()
+except FileNotFoundError as error:
+    print('File not found')
+    if error:
+        print('A new file is created')
+        f = open('Pandas.txt', 'w+')
+
+
+Create a function that finds the range of a triangle's third edge, given the side lengths of first two parameters
+a = int(input('Input side a >: '))
+b = int(input('Input side b >: '))
+
+def tri(a, b):
+
+    if a>b:
+        lowerb = a-b
+        Upperb = b+a
+        print(f'Triangle side c range is between {lowerb} and {Upperb}')
+    elif b>a:
+        lowerb = b-a
+        Upperb = b+a
+        print(f'Triangle side c range is between {lowerb} and {Upperb}')
+
+tri(a,b)
+
+
+Create a function that takes in name of
+ Name of Team  
+ wins, draws and losses and calculates the number of points a football team has obtained so far. A win receives 3 points, a draw 1 point and a loss 0 points.
+Create a dictionary of Taunts 
+Create a dictionary of good comments
+Create a dictionary of bad comments 
+Depending on your personal feelings and the how many wins the team scores randomly print a message (Taunt + good/bad comments)
+def foot(team = 'Reggae_boys', wins = 0 , draws = 0, losses = 0 ):
+    print (f'The team name is {team}')
+    points = (wins*3) + draws +(losses*0)
+    print (f'The team points are {points}, wins are {wins}, draws are {draws} and losses are {losses}')
+    x = {'Taunts' :' You are a loser',
+         'Good': 'You are doing great',
+         'bad': 'This team sucks',
+            'comments': 'Keep on working!'}
+    feelings =''
+    if losses > 6 and points < 6:
+        print (x.get('Taunts'))
+    elif losses > 12 and points < 3:
+        print (x.get('Bab'))
+    elif wins >= 6 and points > 12:
+        print(x.get('Good'))
+    else:
+        print(x.get('comments'))
+
+
+foot('rat_race', 6, 3, 0)
+
+
