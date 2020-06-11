@@ -1,0 +1,14 @@
+3) The ISBN-10 verification process is used to validate book identification numbers. These normally contain dashes and look like 3-598-21508-8. Write a function to report if a number is valid 10 digit ISBN 
+# in progress
+
+import re
+isbn = input("Please enter isbn: ")
+def ISBN(isbn):
+    p = r'[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}'
+    if re.match(p,isbn):
+        print(isbn, 'Valid isbn')
+        return isbn
+    else:
+        print(isbn, 'Not a valid isbn')
+
+ISBN(isbn)

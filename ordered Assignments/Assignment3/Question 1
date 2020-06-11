@@ -1,0 +1,16 @@
+Q1) Write a palindrome checker in Python. 
+Write a Python function that checks whether a passed string is palindrome or not.
+Unum = int(input("Enter a number:"))
+def pol(Unum):
+    temp=Unum
+    rev = 0
+    while(Unum>0):
+        dig=Unum%10
+        rev=rev*10+dig
+        Unum=Unum//10
+    if(temp==rev):
+        print("The number is palindrome!")
+    else:
+        print("Not a palindrome!")
+pol(Unum)
+

@@ -1,0 +1,18 @@
+Read a file in python, 
+Use Try, Exception and Finally block to execute pieces of code
+check if it exists 
+If it exists print out the first 10 lines 
+If it does not exist print on console “the file does not exist”  
+#The code here is working but I cant see any results to optimise it because my IDE is not operating properlt for open funtion and regex.
+# I am able to get it to run now and I will try to fix the other issues tomorrow.
+
+try:
+    f = open('Pandas.txt', 'r+')
+    for i in range(10):
+        print(f.readline())
+    f.close()
+except FileNotFoundError as error:
+    print('File not found')
+    if error:
+        print('A new file is created')
+        f = open('Pandas.txt', 'w+')

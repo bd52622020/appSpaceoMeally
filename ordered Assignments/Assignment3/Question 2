@@ -1,0 +1,28 @@
+Q2)
+Write a Python script to display the various Date Time formats.
+Current date and time
+Current year
+Month of year
+Week number of the year
+Weekday of the week
+Day of year
+Day of the month
+Day of week
+ import datetime
+now = datetime.datetime.now()
+print (now)
+print('Current date and time: ')
+print (now.strftime('%Y-%m-%d %H:%M:%S'))
+print('Current Year : ')
+print (now.strftime('%Y'))
+print('Current Month : ')
+print (now.strftime('%m'))
+print('Current day: ')
+print (now.strftime('%d'))
+print('Current time ')
+print (now.strftime('%H:%M:%S'))
+
+#This presents the week.
+my_date = datetime.date.today()
+year, week_num, day_of_week = my_date.isocalendar()
+print("Week #" + str(week_num) + " of year " + str(year))

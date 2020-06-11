@@ -1,0 +1,8 @@
+1. Create a function that takes a dictionary of student names and returns a list of student names in alphabetical order. 
+
+Student_name = ['Tim', 'Tom', 'Bil', 'Rome', 'Jim']
+def sort1(Student_name):
+    x = sorted(Student_name)
+    print(x)
+
+sort1(Student_name)

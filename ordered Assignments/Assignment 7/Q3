@@ -1,0 +1,16 @@
+Create a function that finds the range of a triangle's third edge, given the side lengths of first two parameters
+a = int(input('Input side a >: '))
+b = int(input('Input side b >: '))
+
+def tri(a, b):
+
+    if a>b:
+        lowerb = a-b
+        Upperb = b+a
+        print(f'Triangle side c range is between {lowerb} and {Upperb}')
+    elif b>a:
+        lowerb = b-a
+        Upperb = b+a
+        print(f'Triangle side c range is between {lowerb} and {Upperb}')
+
+tri(a,b)

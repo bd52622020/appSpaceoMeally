@@ -1,0 +1,15 @@
+Q1) Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+string1 = ('tstsdd TTT shs TT')
+def case(string1):
+    U = 0
+    l = 0
+    for i in string1:
+        if i.isupper():
+            U +=1
+        if i.islower():
+            l +=1
+
+    print (f'Number of upper case is {U} and the number of lower case is {l}')
+    return
+case(string1)
+

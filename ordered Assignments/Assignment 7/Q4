@@ -1,0 +1,27 @@
+Create a function that takes in name of
+ Name of Team  
+ wins, draws and losses and calculates the number of points a football team has obtained so far. A win receives 3 points, a draw 1 point and a loss 0 points.
+Create a dictionary of Taunts 
+Create a dictionary of good comments
+Create a dictionary of bad comments 
+Depending on your personal feelings and the how many wins the team scores randomly print a message (Taunt + good/bad comments)
+def foot(team = 'Reggae_boys', wins = 0 , draws = 0, losses = 0 ):
+    print (f'The team name is {team}')
+    points = (wins*3) + draws +(losses*0)
+    print (f'The team points are {points}, wins are {wins}, draws are {draws} and losses are {losses}')
+    x = {'Taunts' :' You are a loser',
+         'Good': 'You are doing great',
+         'bad': 'This team sucks',
+            'comments': 'Keep on working!'}
+    feelings =''
+    if losses > 6 and points < 6:
+        print (x.get('Taunts'))
+    elif losses > 12 and points < 3:
+        print (x.get('Bab'))
+    elif wins >= 6 and points > 12:
+        print(x.get('Good'))
+    else:
+        print(x.get('comments'))
+
+
+foot('rat_race', 6, 3, 0)

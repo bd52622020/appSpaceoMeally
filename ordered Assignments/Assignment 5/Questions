@@ -1,0 +1,21 @@
+Movie Lens Data Assignment 
+Tools: Excel, Python Pandas  
+Print a list of the 10 movies that received the most number of ratings. 
+Print a list of the 10 movies that received the most number of ratings, sorted by the number of ratings. 
+Print a list of the number of ratings received by each genre. 
+Print the oldest movie with a “5” rating. 
+Print a list of the genre of the top 10 most rated movies. 
+Print the title of the movie that was rated the most by students 
+Print the list of movies that received the highest number of “5” rating 
+Print the list of zip codes corresponding to the highest number of users that rated movies. 
+Find the most rated movie by users in the age group 20 to 25. 
+Print the list of movies that were rate after year 1960. 
+ 
+BONUS  
+ 
+1) Convert UnixTimeStamp in  timestamp column of u.data to human readable date 
+ 
+ 
+https://stackabuse.com/creating-a-simple-recommender-system-in-python-using-pandas/
+
+ 

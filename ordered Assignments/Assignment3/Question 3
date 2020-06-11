@@ -1,0 +1,8 @@
+Q3)
+Write a Python program to subtract 30 days from current date.
+import datetime
+from datetime import date, timedelta
+dt = date.today() - timedelta(30)
+print ('Current date :', date.today ())
+print ('30 days before Current Date :', dt)
+

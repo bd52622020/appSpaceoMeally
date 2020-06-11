@@ -1,0 +1,12 @@
+4) Given a list of numbers, return True if first and last number of a list is same
+list1 = [2, 3, 4,5,6,2,4]
+def beg(list1):
+    y = (list1[0])
+    x = (list1[-1])
+    if y == x:
+        print ('Beginning and end number is the same')
+        return True
+    else:
+        print ('Beginning and end number is not the same')
+
+beg(list1)

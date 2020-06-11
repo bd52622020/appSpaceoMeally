@@ -1,0 +1,17 @@
+2. Write a Python class which has two methods get_String and print_String.  
+a. get_String accept a string from the user sa 
+b. print_String print the string in upper case.
+ 
+class Ass_4():
+    def __init__(self):
+        self.string1 = ""
+
+    def get_s(self):
+        self.string1 = input('Input a sting: ')
+
+    def print_s(self):
+        print(self.string1.upper())
+
+string1 = Ass_4()
+string1.get_s()
+string1.print_s()
