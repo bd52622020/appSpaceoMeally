@@ -1,0 +1,33 @@
+What are RDD Operations in Spark? 
+
+Spark has certain operations which can be performed on RDD. An operation is a method, which can be applied on a RDD to accomplish certain task. RDD supports two types of operations, which are Action and Transformation. An operation can be something as simple as sorting, filtering and summarizing data.
+
+What do you understand by Lazy Evaluation? 
+As the name itself indicates its definition, lazy evaluation in Spark means that the execution will not start until an action is triggered. In Spark, the picture of lazy evaluation comes when Spark transformations occur.
+Transformations are lazy in nature meaning when we call some operation in RDD, it does not execute immediately. Spark maintains the record of which operation is being called(Through DAG). 
+
+What is a DAG in spark ? 
+DAG a finite direct graph with no directed cycles. There are finitely many vertices and edges, where each edge directed from one vertex to another. It contains a sequence of vertices such that every edge is directed from earlier to later in the sequence. It is a strict generalization of MapReduce model. DAG operations can do better global optimization than other systems like MapReduce. The picture of DAG becomes clear in more complex jobs.
+
+Apache Spark DAG allows the user to dive into the stage and expand on detail on any stage. In the stage view, the details of all RDDs belonging to that stage are expanded. The Scheduler splits the Spark RDD into stages based on various transformation applied. (You can refer this link to learn RDD
+
+What is the role of a spark Driver ? 
+The spark driver is the program that declares the transformations and actions on RDDs of data and submits such requests to the master.
+Its location is independent of the master/slaves. You could co-located with the master or run it from another node. The only requirement is that it must be in a network addressable from the Spark Workers.
+
+What is Shuffling in Spark ? 
+Shuffle operation is used in Spark to re-distribute data across multiple partitions. It is a costly and complex operation. In general a single task in Spark operates on elements in one partition. To execute shuffle, we have to run an operation on all elements of all partitions. It is also called all-to- all operation.
+
+What are the deploy modes in Spark? 
+Spark is preconfigured for YARN and does not require any additional configuration to run.
+
+Two deployment modes can be used to launch Spark applications on YARN:
+
+In cluster mode, jobs are managed by the YARN cluster. The Spark driver runs inside an Application Master (AM) process that is managed by YARN. This means that the client can go away after initiating the application.
+In client mode, the Spark driver runs in the client process, and the Application Master is used only to request resources from YARN.
+What is the difference between RDD and a dataframe ? 
+Image result for What is the difference between RDD and a dataframe ?
+RDD – RDD is a distributed collection of data elements spread across many machines in the cluster. RDDs are a set of Java or Scala objects representing data. DataFrame – A DataFrame is a distributed collection of data organized into named columns. It is conceptually equal to a table in a relational database.
+
+How does spark achieve fault tolerance ?
+Fault Tolerance in Spark – How Spark Handles Fault Tolerance. If any of the nodes of processing data gets crashed, that results in a fault in a cluster. In other words, RDD is logically partitioned and each node is operating on a partition at any point in time. 
