@@ -1,0 +1,7 @@
+Q1 Count the number of words in a text file
+
+f = open("Shakespeare.txt", "r+")
+text = f.read()
+words = text.split()
+c = len(words)
+print('Word count of Shakespeare text file. :', c)

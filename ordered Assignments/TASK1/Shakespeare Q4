@@ -1,0 +1,13 @@
+Q2 Total amount of numbers in Shakespeare text file.
+
+f = open("Shakespeare.txt", "r+")
+text = f.readlines()
+c = 0
+for i in c: 
+      
+    for j in line: 
+        if j.isdigit() == True: 
+              
+            c += int(i) 
+  
+print("Total numbers are:", c)

@@ -1,0 +1,17 @@
+Q5 Creating a CSV file with the results
+
+import csv
+
+writer.writerow(('Words', '901325'))
+writer.writerow(('Lines', '124456'))
+writer.writerow(('Vovels', '2727825'))
+writer.writerow(('Numbers', '12949'))
+    
+    
+print('Task 1 results:\n' + ', '.join(field for field in fields)) 
+   
+for i in rows[::]: 
+   
+    for j in row: 
+        print("%10s"%j), 
+    print('\n')

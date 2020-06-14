@@ -1,0 +1,12 @@
+Q2 vowels in Shakespeare text file.
+
+f = open("Shakespeare.txt", r+)
+Sh = f.read().rstrip("\n")
+    
+v = set("A E I O U a e i o u")
+countV = 0
+fori in Sh:
+    if i in v:
+        countV += 1
+
+print("Vowel count: ",countV)

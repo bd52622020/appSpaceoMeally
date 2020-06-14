@@ -1,0 +1,28 @@
+Q3) 
+Write a program (function!) that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates. 
+
+Write two different functions to do this - one using a loop and constructing a list, and another using sets
+
+
+x = [1,1,2,2,3,4,5,5,6,7,7,7]
+
+def dup1(x):
+  y = []
+  for i in x:
+    if i not in y:
+      y.append(i)
+      print(y)
+  return y
+
+dup1(x)
+
+
+def dup2(x):
+    d = list(set(x))
+    print(d)
+    return d
+
+dup2(x)
+
+
+

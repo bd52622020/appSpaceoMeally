@@ -1,0 +1,3 @@
+Q2 Line count in Shakespeare text file.
+num_lines = len(open("Shakespeare.txt").readlines())
+print (num_lines)
