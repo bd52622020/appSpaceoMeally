@@ -1,0 +1,14 @@
+2. Write a map function that returns the squares of the items in the list. 
+lst1=[10, 20, 30, 40, 50, 60]
+
+def square(x):
+
+    return x*x
+
+nums = [2, 2, 3, 3, 4, 4, 5, 5]
+
+squared_nums = map(square, nums)
+
+for i in squared_nums:
+
+    print(i)

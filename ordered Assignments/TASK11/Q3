@@ -1,0 +1,13 @@
+3. Create a dictionary (in your file) of names and birthdays. When you run your program it should ask the user to enter a name, and return the birthday of that person back to them. The interaction should look something like this:
+
+Persons = [ 'Jack', 'James', 'Jill', 'Pam','Sam']
+print(Persons)
+name = input('Enter a name from the list above to obtain that persons birthday: ')
+dict={"Jack": '01/03/1993', "James": '09/09/1994', "Jill": '03/03/1999', "Pam": '01/01/1990', "Sam": '12/12/1995'}
+for i in dict:
+    if i == name:
+        x = dict.get(i)
+        print (f'{name} birthday is {x}')
+        break
+else:
+    print ('Please enter a name from the list above')
