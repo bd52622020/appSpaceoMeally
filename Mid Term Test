@@ -47,6 +47,7 @@ b. What is the difference between nameNodes and dataNodes?
 The difference are Name Node is the master node in HDFS that manages the files system metadata whilst the Data Node is a slave node in HDFS that stores the actual data as instructed by the master node (Name Node).
 
 c. What does jps command do in Hadoop? 
+JPS also known as Java Virtual Machine Process Status Tool is the command used to check all Hadoop daemons. i.e NameNode, DataNode and more.
 
 d. What do you mean by metadata in Hadoop? 
 It is a representation of the structure of HDFS directories and files in a tree. HDFS metadata also includes the various attributes of directories and files. This can be ownership, permissions, quotas, and replication factor.
