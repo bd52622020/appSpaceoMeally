@@ -1,0 +1,58 @@
+1. Star Wars Data 
+a. Upload data to HBase 
+b. Draw 5 unique insights from the datasets, analytical code can be in pySpark, python Pandas, or Scala 
+
+##Software issue at the moment 
+
+1. PySpark 
+a. What is an RDD? 
+RDD also is known as Resilient Distributed  Datasets is the fundamental data structure of spark. RDDs are immutable distributed collections of objects. The datasets in RDD are divided into logical partitions, that may be computed on different nodes of the cluster. RDDs are read-only partitions. 
+
+b. What is a DAG ? 
+(Directed Acyclic Graph)  also, know as DAG in Spark is a set of Vertices and Edges, where vertices represent the RDDs and the edges represent the Operation to be applied on RDD. In Spark DAG, every edge directs from earlier to later in the sequence. On the calling of Action, the created DAG submits to DAG Scheduler which further splits the graph into the stages of the task.
+
+c. What is the role of a spark driver in the spark cluster? 
+Spark driver in its cluster is responsible for converting a user application to smaller execution units which are the task. It then schedules them to run with a cluster manager on executors. The driver's job is to execute the spark application and return the results to the user.
+
+d. Is Spark fault Tolerant and how does Spark achieve that?
+Spark operates on data in fault-tolerant file systems like HDFS. So all the RDDs generated from fault-tolerant data is fault-tolerant. Since Spark RDD is an immutable dataset, every Spark RDD remembers the lineage of the deterministic operation that was used on fault-tolerant input datasets to create it.
+
+ 2. Shell 
+a. How to make a shell script executable ? 
+Open the terminal. Go into the directory that you want to create the script.
+Make a file with .sh extension.
+Write your script in the file using an editor.
+Executable with command chmod +x <fileName>.
+Run the script using ./<fileName>.
+Add #!/bin/bash to the top of it.
+This is necessary for the “make it executable” part.
+
+b. What is the use of “#!/bin/bash” ? 
+Tells the OS to invoke the specified shell, to execute the commands that follow in the script.
+c. How do you resolve variable in a shellscript ? 
+Type (#!/bin/bash) then define you variables 
+eg
+value1=10
+The we can also assign that variable to another variable. 
+value2=$value1
+
+3. Hadoop 
+a. What are the core components of Hadoop? 
+The three main components are:
+1. MapReduce –  This software programming model for processing large sets of data in parallel
+2. HDFS – Is a Java-based distributed file system that can store all kinds of data without prior organisation.
+3. YARN – A resource management framework that schedules and handles resource requests from distributed applications.
+
+b. What is the difference between nameNodes and dataNodes? 
+The difference are Name Node is the master node in HDFS that manages the files system metadata whilst the Data Node is a slave node in HDFS that stores the actual data as instructed by the master node (Name Node).
+
+c. What does jps command do in Hadoop? 
+
+d. What do you mean by metadata in Hadoop? 
+It is a representation of the structure of HDFS directories and files in a tree. HDFS metadata also includes the various attributes of directories and files. This can be ownership, permissions, quotas, and replication factor.
+
+e. What is a block in HDFS, why block size 64MB?
+In HDFS files are broken down into block-sized chunks called data blocks. They are stored as independent units.
+64MB is to reduce the burden of the name node. i.e the amount of data the name node process at a time.
+64MB block size is the smallest unit of data that a file system can store. It will need another block for data more than 64MB.
+
